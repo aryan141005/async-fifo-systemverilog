@@ -80,6 +80,28 @@ This project demonstrates RTL design and simulation-based verification. It does 
 
 ## Development Note
 
+## Waveform Results
+
+The asynchronous FIFO was simulated using Icarus Verilog, and waveform data was captured for FIFO operation and clock-domain crossing (CDC) behavior.
+
+### 1. FIFO Operation Waveform
+
+Shows write and read clock activity, data transfers, FIFO full and empty flags, and pointer progression.
+
+![FIFO Operation Waveform](waveforms/fifo_operation_waveform.png)
+
+Raw waveform data: [`fifo_operation_waveform.vcd`](waveforms/fifo_operation_waveform.vcd)
+
+### 2. CDC Pointer Synchronization Waveform
+
+Shows the write and read pointers, their synchronized versions across clock domains, and the independent clock activity.
+
+![CDC Pointer Waveform](waveforms/cdc_pointer_waveform.png)
+
+Raw waveform data: [`cdc_pointer_waveform.vcd`](waveforms/cdc_pointer_waveform.vcd)
+
+Both waveform captures correspond to simulations that completed with zero reported testbench errors and zero detected Gray-code violations.
+
 This project was developed independently with AI-assisted coding support. Verification claims refer to the recorded simulation output.
 
 ## License
